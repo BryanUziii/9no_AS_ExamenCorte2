@@ -23,10 +23,12 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/txtCodigo"
                     android:layout_width="200sp"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:text="Codigo" />
+                    android:inputType="number"
+                    android:hint="Codigo" />
 
                 <Button
                     android:id="@+id/btnBuscar"
@@ -37,24 +39,29 @@
             </LinearLayout>
 
             <EditText
+                android:id="@+id/txtNombreProducto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="48dp"
-                android:text="Nombre del producto" />
+                android:hint="Nombre del producto" />
 
             <EditText
+                android:id="@+id/txtMarca"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="48dp"
-                android:text="Marca" />
+                android:hint="Marca" />
 
             <EditText
+                android:id="@+id/txtPrecio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="48dp"
-                android:text="Precio" />
+                android:inputType="number"
+                android:hint="Precio" />
 
             <RadioGroup
+                android:id="@+id/radioGroup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="15sp">
@@ -100,7 +107,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Limpiar" />
+                    android:text="Actualizar" />
             </LinearLayout>
 
             <LinearLayout
